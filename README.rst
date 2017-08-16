@@ -3,6 +3,36 @@ Slick
 
 A native web-based client for Slack.
 
+**This is an early stage demo.**
+
+There's still a lot of work needed. For example, the current code
+will *only* load the DjangoCon 2017 slack channel. There are all
+sorts of possible improvements - and like all BeeWare projects,
+pull requests are most welcome!
+
+Quickstart
+----------
+
+.. note::
+    These instructions may not work out of the box right now.
+    You may need to install development versions of Toga in
+    order for these instructions to work.
+
+To run Slick, clone the repository, and run it as a module::
+
+    $ git clone https://github.com/pybee/slick.git
+    $ pip install -e .
+    $ python -m slick
+
+If you'd like this to be a standalone app, you can use Briefcase::
+
+    $ pip install briefcase
+    $ python setup.py macos
+
+If you're on Windows, replace `macos` with `windows`; on Linux, replace
+`macos` with `linux`. It should also work on iOS and Android by using
+`ios` and `android`, respectively.
+
 .. Documentation
 .. -------------
 
